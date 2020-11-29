@@ -38,7 +38,7 @@ let quoteArray = [{
  ***/
 function getRandomQuote() {
     //build a random constant number between quoteArray.length and 1
-    const randnum = (Math.random() * quoteArray.length) + 1;
+    const randnum = Math.floor((Math.random() * quoteArray.length) + 1);
     //get a reference to an entry in the quoteArray. We make it const because we have no intention of modifying the return value.
     const quote = quoteArray[randnum];
     //return the object
